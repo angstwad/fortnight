@@ -16,7 +16,7 @@ from distutils.core import setup
 
 setup(
     name='fortnight',
-    version='.1',
+    version='0.1.0',
     packages=['fortnight'],
     url='https://github.com/angstwad/fortnight',
     license='Apache License Version 2.0',
