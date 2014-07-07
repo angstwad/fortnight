@@ -32,7 +32,7 @@ class iCalendar(object):
         :param config: A dict containing configuration information
         """
         self._calendar = {
-            u'prodid': u'-//Google Inc//Google Calendar 70.9054//EN',
+            u'prodid': u'Microsoft Exchange Server 2010',
             u'version': u'2.0',
             u'calscale': u'GREGORIAN',
             u'method': None,
@@ -62,8 +62,8 @@ DTEND:{dtend}
 DTSTAMP:{dtstamp}
 ORGANIZER;CN={organizer_email}:mailto:{organizer_email}
 UID:{uid}@{uid_fqdn}
-ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=ACCEPTED;RSVP=TRUE
- ;CN={attendee_email};X-NUM-GUESTS=0:MAILTO:{attendee_email}
+ ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;RSVP=TRUE
+ ;CN={attendee_email}:MAILTO:{attendee_email}
 CREATED:{dtstamp}
 DESCRIPTION:{description}
 LAST-MODIFIED:{dtstamp}
